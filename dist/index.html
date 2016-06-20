@@ -38,7 +38,7 @@
       if (url && url.length > 1) {
         url = decodeURIComponent(url[1]);
       } else {
-        url = "http://petstore.swagger.io/v2/swagger.json";
+        url = "https://th3zigg.github.io/swaggerdocstest/specs/v2/connect-api-docs.json";
       }
 
       hljs.configure({
@@ -50,7 +50,7 @@
         window.SwaggerTranslator.translate();
       }
       window.swaggerUi = new SwaggerUi({
-      	url: "specs/v2/connect-api-docs.json",
+      	url: "/swaggerdocstest/specs/v2/connect-api-docs.json",
         dom_id: "swagger-ui-container",
         supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
         onComplete: function(swaggerApi, swaggerUi){
